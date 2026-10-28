@@ -1,0 +1,6 @@
+; Filename: SNBBSS_EXP.DEF
+LIBRARY SNBBSS.DLL
+; Export alias for the module entry point (Win32 / x86 build).
+; The host calls init__<modname>; the decorated cdecl symbol is _init__snbbss.
+EXPORTS
+	_init__snbbss=init__snbbss	@1

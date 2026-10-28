@@ -1,0 +1,185 @@
+
+LEVEL6 {BBS Stats: module text}
+
+MAINMNU {
+  [0;36mออต [1;37mBBS STATS[0;36m ฦอออออออออออออออออออออออออออออออออออออออออออออออออออออออออ[0m
+  [1;30m    version N!SBS_VERSION[0m
+
+   [0;36m[[1;36mB[0;36m][0m [1;37mBBS statistics[0m [1;30m........[0m [0;37mhow the system is doing[0m
+   [0;36m[[1;36mM[0;36m][0m [1;37mModule statistics[0m [1;30m.....[0m [0;37mwho uses what, and for how long[0m
+   [0;36m[[1;36mX[0;36m][0m [1;37mExit[0m
+} T Main menu
+
+SYSOPT {   [0;36m[[1;36mS[0;36m][0m [1;37mSysop configuration[0m [1;30m...[0m [0;37mwhat the pages show[0m
+} T Main menu: sysop line (shown to sysops only)
+
+MAINPRM {
+  [1;30mCreated by Jacque Steyn (The Adept BBS) & Mark Laudenbach[0m
+
+  [1;37mMake your selection [0;37m([1;36mB[0;37m, [1;36mM[0;37m, [1;36mX[0;37m to exit, [1;36m?[0;37m for menu)[1;37m: [0m} T Main menu prompt
+
+BADSEL {
+  [1;31mThat's not one of the choices.[0m
+} T Invalid selection
+
+NOACC {
+  [1;31mSorry, that page is restricted on this BBS.[0m
+} T No access to a page
+
+BBSHDR {
+  [0;36mออต [1;37mBBS STATISTICS[0;36m ฦออออออออออออออออออออออออออออออออออออออออออออออออออออ[0m
+
+} T BBS stats page: header
+
+BBSROW {   [0;37mL:SBS_LABEL [1;33mN!SBS_VALUE[0m
+} T BBS stats page: one item
+
+BBSFTR {
+  [0;36mฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ[0m
+} T BBS stats page: footer
+
+MODHDR {
+  [0;36mออต [1;37mMODULE STATISTICS[0;36m ฦอออออออออออออออออออออออออออออออออออออออออออออออออ[0m
+   [1;37mN!SBS_WINDOW[0m
+
+   [1;36mN!SBS_MHEAD[0m
+   [0;36mN!SBS_MROW[0m
+} T Module stats page: header (SBS_MROW holds the underline)
+
+MODROW {   [0;37mN!SBS_MROW[0m
+} T Module stats page: one module
+
+MODNONE {   [0;37mNo module activity in this period yet.[0m
+} T Module stats page: nothing to show
+
+MODPRM {
+  [0;36mฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ[0m
+  [1;37mShow [0;36m[[1;36mT[0;36m][0;37moday [0;36m[[1;36mW[0;36m][0;37meek [0;36m[[1;36mM[0;36m][0;37month [0;36m[[1;36mA[0;36m][0;37mll-time, or [0;36m[[1;36mX[0;36m][0;37m to go back[1;37m: [0m} T Module stats page: prompt
+
+CFGMNU {
+  [0;36mออต [1;37mSYSOP CONFIGURATION[0;36m ฦอออออออออออออออออออออออออออออออออออออออออออออออ[0m
+
+   [0;36m[[1;36m1[0;36m][0m [1;37mGeneral settings[0m [1;30m......[0m [0;37msysop time, windows, access[0m
+   [0;36m[[1;36m2[0;36m][0m [1;37mBBS page items[0m [1;30m........[0m [0;37mwhich stats the BBS page shows[0m
+   [0;36m[[1;36m3[0;36m][0m [1;37mModule page columns[0m [1;30m...[0m [0;37mwhich columns are shown[0m
+   [0;36m[[1;36m4[0;36m][0m [1;37mModules shown[0m [1;30m.........[0m [0;37mwhich modules are listed[0m
+   [0;36m[[1;36m5[0;36m][0m [1;37mLogon advertisement[0m [1;30m...[0m [0;37mtop modules, shown at logon[0m
+   [0;36m[[1;36mX[0;36m][0m [1;37mBack[0m
+
+  [1;30mChanges apply immediately and are logged to the audit trail.[0m
+} T Sysop configuration menu
+
+CFGPRM {
+  [1;37mConfigure which [0;37m([1;36m1[0;37m-[1;36m5[0;37m, or [1;36mX[0;37m to go back)[1;37m: [0m} T Sysop configuration prompt
+
+SETHDR {
+  [0;36mออต [1;37mGENERAL SETTINGS[0;36m ฦออออออออออออออออออออออออออออออออออออออออออออออออออ[0m
+
+} T General settings: header
+
+SETROW {   [0;36m[[1;36mR"SBS_NUM[0;36m][0m [0;37mLBSBS_LABEL [1;33mN!SBS_VALUE[0m
+} T General settings: one setting
+
+SETPRM {
+  [1;37mChange which setting [0;37m([1;36m1[0;37m-[1;36mN!SBS_COUNT[0;37m, or [1;36mX[0;37m to go back)[1;37m: [0m} T General settings: prompt
+
+SETASK {
+  [0;36mฤฤฤ [1;37mN!SBS_LABEL[0;36m ฤฤฤ[0m
+  [0;37mCurrently [1;33mN!SBS_VALUE[0;37m.[0m
+  [0;37mAccepts [1;37mN!SBS_RANGE[0;37m.[0m
+
+  [1;37mNew value [0;37m([1;36mENTER[0;37m cancels)[1;37m: [0m} T General settings: ask for a value
+
+SETOK {
+  [1;32mDone. [0;37mN!SBS_LABEL is now [1;33mN!SBS_VALUE[0;37m.[0m
+} T General settings: change confirmed
+
+SETBAD {
+  [1;31mThat won't work here. [0;37mThis setting accepts [1;37mN!SBS_RANGE[0;37m.[0m
+  [1;37mNew value [0;37m([1;36mENTER[0;37m cancels)[1;37m: [0m} T General settings: value not accepted
+
+TOGHDR {
+  [0;36mออต [1;37mL8SBS_TITLE[0;36m ฦออออออออออออออออออออออออออออออออออออออออออ[0m
+  [1;30mEntries marked [1;33m*[1;30m are shown. Pick a number to switch it.[0m
+
+} T Show/hide list: header
+
+TOGROW {   [0;36m[[1;36mR#SBS_NUM[0;36m][0m [1;33mL!SBS_MARK [0;37mN!SBS_LABEL[0m
+} T Show/hide list: one entry
+
+TOGPRM {
+  [1;37mSwitch which [0;37m([1;36m1[0;37m-[1;36mN!SBS_COUNT[0;37m, [1;36mA[0;37m show all, [1;36mN[0;37m hide all, [1;36mX[0;37m back)[1;37m: [0m} T Show/hide list: prompt
+
+TOGBAD {
+  [1;31mNo such entry.[0;37m Pick one of the numbers listed above.[0m
+} T Show/hide list: bad number
+
+EXITMSG {
+  [0;37mThanks for checking the stats![0m
+} T Leaving the module
+
+ADHDR {
+  [0;36mออต [1;37mN!SBS_TITLE[0;36m ฦออออ[0m
+  [1;30mTop N!SBS_COUNT by N!SBS_RANKBY, N!SBS_PERIOD[0m
+
+} T Logon ad: header (SBS_TITLE is the headline set online)
+
+ADTROW {   [0;36m[[1;36mR"SBS_NUM[0;36m][0m [1;37mL>SBS_LABEL [1;33mN!SBS_VALUE[0m
+} T Logon ad: one module in the table layout
+
+ADLROW {   [0;37mN!SBS_MROW[0m
+} T Logon ad: one line of the two-column or compact layout
+
+ADFTR {  [0;36mฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ[0m
+} T Logon ad: footer
+
+ADNONE {
+  [0;37mNothing to advertise yet: no module has activity in this window.[0m
+} T Logon ad preview: nothing to show
+
+ADSHDR {
+  [0;36mออต [1;37mLOGON ADVERTISEMENT[0;36m ฦอออออออออออออออออออออออออออออออออออออออออออออออ[0m
+  [1;30mShown to callers as they log on. Restyle its text in SNBBSS.MSG.[0m
+
+} T Logon ad settings: header
+
+ADSPRM {
+  [1;37mChange which setting [0;37m([1;36m1[0;37m-[1;36mN!SBS_COUNT[0;37m, [1;36mP[0;37m to preview, [1;36mX[0;37m to go back)[1;37m: [0m} T Logon ad settings: prompt
+
+GMODFTR {
+  [0;36mฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤฤ[0m
+  [1;30mType [1;36mN!SBS_MODCMD T[1;30m, [1;36mW[1;30m, [1;36mM[1;30m or [1;36mA[1;30m for today, this week, this month or all-time.[0m
+} T Module stats command: footer after the module stats page
+
+GMODUSE {
+  [1;37mUsage: [1;36mN!SBS_MODCMD[0;37m [[1;36mT[0;37m|[1;36mW[0;37m|[1;36mM[0;37m|[1;36mA[0;37m]  today, week, month or all-time[0m
+} T Module stats command: the period was not recognised
+
+MODTPRM {
+  [1;30mT# stops or restarts tracking a module. D# deletes its statistics.[0m
+  [1;37mSwitch which [0;37m([1;36m1[0;37m-[1;36mN!SBS_COUNT[0;37m, [1;36mA[0;37m all, [1;36mN[0;37m none, [1;36mT#[0;37m, [1;36mD#[0;37m, [1;36mX[0;37m back)[1;37m: [0m} T Modules shown: prompt (adds T# tracking and D# delete)
+
+DELASK {
+  [1;31mDelete all statistics for [1;33mN!SBS_LABEL[1;31m?[0m
+  [0;37mIts totals and every user's record for it are removed, and this[0m
+  [0;37mcan't be undone. A module still installed starts again from zero.[0m
+
+  [1;37mDelete it [0;37m([1;36mY[0;37m/[1;36mN[0;37m)[1;37m: [0m} T Modules shown: confirm deleting a module's statistics
+
+DELGONE {
+  [1;32mDeleted. [0;37mN!SBS_LABEL has been removed from the statistics.[0m
+} T Modules shown: deleted (module not installed)
+
+DELRST {
+  [1;32mDeleted. [0;37mN!SBS_LABEL starts again from zero.[0m
+  [1;30mIt is still installed. Use T# to stop tracking it.[0m
+} T Modules shown: deleted (module still installed)
+
+DELBUSY {
+  [1;31mAn earlier delete is still finishing.[0;37m Try again in a minute.[0m
+} T Modules shown: a delete is already in progress
+
+DELNO {
+  [0;37mNothing was deleted.[0m
+} T Modules shown: delete cancelled
+
